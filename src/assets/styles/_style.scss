@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    box-sizing: border-box;
+    color: $dk-blue;
+}
+
+h1, h2, h3, h4, h5, p, span, ul, ol, li {
+    font-weight: 400;
+}
+h1 {
+    font-size: $text-lg;
+    line-height: $text-lg-lg;
+    font-weight: 500;
+}
+h2 {
+    font-size: $text-lg-sm;
+    line-height: $text-lg;
+    font-weight: 600;
+}
+h3 {
+    font-size: $text-md-lg;
+    line-height: $text-lg-sm;
+    color: $mauve;
+    font-weight: 600;
+}
+
+p, span, ul, ol, li {
+    font-size: $text-sm-md;
+}
+
+input, select, textarea {
+    padding: $space-xs;
+    border-radius: $border-sq-round;
+    font-size: $text-sm-lg;
+    width: 100%;
+    border: 1px solid $dk-blue;
+    cursor: pointer;
+}
+ul {
+    list-style: none;
+    padding: none;
+}
+
+a {
+    color: $blue;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.15s ease-in-out;
+    &:hover, &:active {
+        color: $purple;
+    }
+}
+
+@media (min-width: $sm) {
+    h1 {
+        font-size: $text-xl;
+        line-height: $text-xl-lg;
+    }
+    h2 {
+        font-size: $text-lg;
+        line-height: $text-lg-lg;
+    }
+}

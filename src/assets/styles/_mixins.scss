@@ -1,0 +1,27 @@
+@mixin grid($cols: null, $rows: null, $col-gap: null, $row-gap: null, $just: null, $align: null) {
+    display: grid;
+    grid-template-columns: $cols;
+    grid-template-rows: $rows;
+    grid-column-gap: $col-gap;
+    grid-row-gap: $row-gap;
+    justify-items: $just;
+    align-items: $align;
+}
+
+@mixin flex($dir: row, $just: null, $align: center) {
+    display: flex;
+    flex-direction: $dir;
+    justify-content: $just;
+    align-items: $align;
+}
+
+@mixin pos-abs($pos: absolute, $top: 0, $left: 0, $right: null, $bottom: null, $width: null, $height: null, $z: 1) {
+    position: $pos;
+    top: $top;
+    left: $left;
+    right: $right;
+    bottom: $bottom;
+    width: $width;
+    height: $height;
+    z-index: $z;
+}

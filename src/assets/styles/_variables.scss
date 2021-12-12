@@ -1,0 +1,58 @@
+
+/***** Font Families ****/
+/************************/
+$font: 'Poppins', sans-serif;
+
+/***** Colors ****/
+/*****************/
+$dk-blue: #261c2c;
+$mauve: #3e2c41;
+$purple: #5c527f;
+$blue: #6e85b2;
+
+$lt-grey: #eeeeee;
+$grey: #b3b3b3;
+$dk-grey: #757575;
+
+/***** Font Sizes ****/
+/*********************/
+$text-xs: 0.75rem;
+$text-sm: 1rem;
+$text-sm-md: 1.125rem;
+$text-sm-lg: 1.25rem;
+
+$text-md-sm: 1.5rem;
+$text-md: 1.625rem;
+$text-md-lg: 1.75rem;
+
+$text-lg-sm: 2rem;
+$text-lg: 2.25rem;
+$text-lg-lg: 2.5rem;
+
+$text-xl: 3rem;
+$text-xl-lg: 3.25rem;
+
+/***** Spacing ****/
+/******************/
+$space-xs: 0.75rem;
+$space-sm: 1.5rem;
+$space-md: 3rem;
+$space-lg: 5rem;
+$space-xl: 6rem;
+
+/***** Borders ****/
+/******************/
+$border-sq: 2px;
+$border-sq-soft: 4px;
+$border-sq-round: 6px;
+
+$border-rd-soft: 10px;
+$border-rd-round: 16px;
+
+/***** Breakpoints ****/
+/**********************/
+$xs: 425px;
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
