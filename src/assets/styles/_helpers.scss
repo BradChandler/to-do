@@ -1,0 +1,300 @@
+
+/***** Font Styles ****/
+/**********************/
+.text__bolder {
+    font-weight: 600;
+}
+.text__bold {
+    font-weight: 500;
+}
+.text__normal {
+    font-weight: 400;
+}
+.text__light {
+    font-weight: 300;
+}
+.text__lighter {
+    font-weight: 200;
+}
+.text__italic {
+    font-style: italic;
+}
+.text__underline {
+    text-decoration: underline;
+}
+.text__center {
+    text-align: center;
+}
+.text__right {
+    text-align: right;
+}
+.text__left {
+    text-align: left;
+}
+
+/***** Font Colors ****/
+/**********************/
+.text__dk-blue {
+    color: $dk-blue;
+}
+.text__mauve {
+    color: $mauve
+}
+.text__purple {
+    color: $purple
+}
+.text__blue {
+    color: $blue;
+}
+.text__lt-grey {
+    color: $lt-grey;
+}
+.text__grey {
+    color: $grey;
+}
+.text__dk-grey {
+    color: $dk-grey;
+}
+
+/***** Font Sizes ****/
+/*********************/
+.text__xs {
+    font-size: $text-xs;
+    line-height: $text-sm-md;
+}
+.text__sm-md {
+    font-size: $text-sm-md;
+    line-height: $text-sm-lg;
+}
+.text__sm-lg {
+    font-size: $text-sm-lg;
+    line-height: $text-md-sm;
+}
+.text__md-sm {
+    font-size: $text-md-sm;
+    line-height: $text-md;
+}
+.text__md {
+    font-size: $text-md;
+    line-height: $text-md-lg;
+}
+.text__md-lg {
+    font-size: $text-md-lg;
+    line-height: $text-lg-sm;
+}
+.text__lg-sm {
+    font-size: $text-lg-sm;
+    line-height: $text-lg;
+}
+.text__lg {
+    font-size: $text-lg;
+    line-height: $text-lg-lg;
+}
+.text__lg-lg {
+    font-size: $text-lg-lg;
+    line-height: $text-xl;
+}
+.text__xl {
+    font-size: $text-xl;
+    line-height: $text-xl-lg;
+}
+.text__xl-lg {
+    font-size: $text-xl-lg;
+    line-height: $text-xl-lg;
+}
+
+/***** Backgrounds ****/
+/**********************/
+.bg__dk-blue {
+    background-color: $dk-blue;
+}
+.bg__mauve {
+    background-color: $mauve;
+}
+.bg__purple {
+    background-color: $purple;
+}
+.bg__blue {
+    background-color: $blue;
+}
+
+/***** Spacing ****/
+/******************/
+.p-l-xs {
+    padding-left: $space-xs;
+}
+.p-r-xs {
+    padding-right: $space-xs;
+}
+.p-lr-xs {
+    padding-left: $space-xs;
+    padding-right: $space-xs;
+}
+.padding__xs {
+    padding-top: $space-xs;
+    padding-bottom: $space-xs;
+}
+.padding__sm {
+    padding: $space-sm 0;
+}
+.padding__md {
+    padding: $space-md 0;
+}
+.padding__lg {
+    padding: $space-lg 0;
+}
+.padding__xl {
+    padding: $space-xl 0;
+}
+
+.m-l-xs {
+    margin-left: $space-xs;
+}
+.m-r-xs {
+    margin-right: $space-xs;
+}
+.m-lr-xs {
+    margin-left: $space-xs;
+    margin-right: $space-xs;
+}
+.margin__xs {
+    margin-top: $space-xs;
+    margin-bottom: $space-xs;
+}
+.margin__sm {
+    margin: $space-sm 0;
+}
+.margin__md {
+    margin: $space-md 0;
+}
+.margin__lg {
+    margin: $space-lg 0;
+}
+.margin__xl {
+    margin: $space-xl 0;
+}
+.m-auto {
+    margin: auto;
+}
+
+/***** Flexbox ****/
+/******************/
+.flex__left {
+    @include flex($just: flex-start);
+}
+.flex__center {
+    @include flex($just: center);
+}
+.flex__right {
+    @include flex($just: flex-end);
+}
+.flex__col {
+    @include flex($dir: column);
+}
+.flex__between {
+    @include flex($just: space-between);
+}
+.flex__around {
+    @include flex($just: space-around)
+}
+.flex__even {
+    @include flex($just: space-evenly);
+}
+.flex__reverse {
+    flex-direction: row-reverse;
+}
+
+/***** Grids ****/
+/****************/
+.grid__one, .grid__two, .grid__three, .grid__four {
+    @include grid($cols: 1fr);
+}
+.grid__xs {
+    grid-row-gap: $space-xs;
+    grid-column-gap: $space-xs;
+}
+.grid__sm {
+    grid-row-gap: $space-sm;
+    grid-column-gap: $space-sm;
+}
+.grid__md {
+    grid-row-gap: $space-md;
+    grid-column-gap: $space-md;
+}
+.grid__just-center {
+    justify-items: center;
+}
+.grid__just-left {
+    justify-items: left;
+}
+.grid__just-right {
+    justify-items: right;
+}
+.grid__align-center {
+    align-items: center;
+}
+.grid__align-left {
+    align-items: left;
+}
+.grid__align-right {
+    align-items: right;
+}
+@media (min-width: $md) {
+    .grid__two, .grid__three, .grid__four {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (min-width: $lg) {
+    .grid__three, .grid__four {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media (min-width: $xl) {
+    .grid__four {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+/***** Fits ****/
+/***************/
+.width__fit {
+    width: fit-content;
+}
+.width__max {
+    width: max-content;
+}
+.width__100 {
+    width: 100%;
+}
+.width__view {
+    width: 100vw;
+}
+
+.height__fit {
+    height: fit-content;
+}
+.height__max {
+    height: max-content;
+}
+.height__100 {
+    height: 100%;
+}
+.height__view {
+    height: 100vh;
+}
+
+/***** Other ****/
+/****************/
+.pos__rel {
+    position: relative;
+}
+.hidden {
+    display: none;
+}
+.pointer {
+    cursor: pointer;
+}
+.list__normal {
+    list-style:disc;
+    list-style-position: inside;
+}
